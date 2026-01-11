@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Enfoque de Trabajo - Andrea Blangino</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#59d411",
+                        "background-light": "#f7f8f6",
+                        "background-dark": "#172210",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .dark .glass-card {
+            background: rgba(23, 34, 16, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#131b0d] dark:text-white antialiased">
+<div class="relative flex h-screen w-full flex-col overflow-x-hidden">
+<!-- TopAppBar Component -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-50">
+<div class="text-[#131b0d] dark:text-white flex size-12 shrink-0 items-center justify-center cursor-pointer">
+<span class="material-symbols-outlined">arrow_back_ios</span>
+</div>
+<h2 class="text-[#131b0d] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">Enfoque de Trabajo</h2>
+</div>
+<!-- PageIndicators Component (Step 5 of 7) -->
+<div class="flex w-full flex-row items-center justify-center gap-3 py-4">
+<div class="h-2 w-2 rounded-full bg-primary/20 dark:bg-primary/10"></div>
+<div class="h-2 w-2 rounded-full bg-primary/20 dark:bg-primary/10"></div>
+<div class="h-2 w-2 rounded-full bg-primary/20 dark:bg-primary/10"></div>
+<div class="h-2 w-2 rounded-full bg-primary/20 dark:bg-primary/10"></div>
+<div class="h-2 w-8 rounded-full bg-primary"></div>
+<div class="h-2 w-2 rounded-full bg-primary/20 dark:bg-primary/10"></div>
+<div class="h-2 w-2 rounded-full bg-primary/20 dark:bg-primary/10"></div>
+</div>
+<!-- HeadlineText Component -->
+<div class="px-6 py-4">
+<h2 class="text-[#131b0d] dark:text-white tracking-tight text-[28px] font-extrabold leading-tight text-center">Una mirada integradora para tu evolución</h2>
+<p class="text-center text-sm mt-3 opacity-80 leading-relaxed px-4">Fusionamos tres dimensiones fundamentales para un proceso de sanación real y profundo.</p>
+</div>
+<!-- Central Integrative Diagram (Modified StoryCarousel concept into visual focus) -->
+<div class="relative flex items-center justify-center py-10 px-4">
+<!-- Organic decorative background shapes -->
+<div class="absolute inset-0 flex items-center justify-center opacity-10">
+<div class="w-64 h-64 bg-primary rounded-full blur-3xl"></div>
+</div>
+<div class="relative flex flex-col items-center gap-8 w-full max-w-sm">
+<!-- Integrative Triple Focus -->
+<div class="flex justify-center items-center gap-2 flex-wrap">
+<!-- Emotional Focus -->
+<div class="flex flex-col items-center gap-3 group">
+<div class="w-24 h-24 bg-center bg-no-repeat bg-cover rounded-full border-4 border-white dark:border-background-dark shadow-xl overflow-hidden ring-4 ring-primary/30" data-alt="Soft light through green leaves representing emotional calm" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC09V49up1cJNMGsHrCckfa8ZtYUTyM_02wlh5yN1JGtqTtbxyssQgp3gG9Jo0N7LalGeVjCJdfWAh1qSIcc0nkndQSgZZ49OHFlt_Xq8Wz-121C8EgoDWvAyGY15Ng_Vhgoj2gCGVCnDqEA0t9bjCUi2uys7wqlJGz-moa71l5Wy2cBZJl8iRHzJzgDOg2YYhV1gH9zo9GoDv2g3Wi-yqa_ZDdwmrPljpUs5cDqOAxlG3Tlb3ncDsVOouAaGh_EQDGRfKDDX4usA");'>
+</div>
+<span class="text-[#131b0d] dark:text-white text-sm font-bold">Emocional</span>
+</div>
+<!-- Corporal Focus -->
+<div class="flex flex-col items-center gap-3 -mt-10 group">
+<div class="w-28 h-28 bg-center bg-no-repeat bg-cover rounded-full border-4 border-white dark:border-background-dark shadow-2xl overflow-hidden ring-4 ring-primary" data-alt="Stones balanced in nature representing physical balance" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD2we-tLEPpMvtBBZIRkjognnnDhzL5Drk3ehJrti1Pbev9Au-1op2F9BB_u-w658vvAPQ2oj6gx5hV_yUeyFvuYwyPXS39Qp--nIxArk45bHFmH3d-DMKaS9bGAAKwVMkHcep2XW6bazDAfbB8WP_B2-XBEf_ba6E6FsMzpLG6HNI7_tErua1NuebbSr43EfAGuk3UyQ20bnS2yQVScW3Aub7NhHUviF5wqViqfGo6Bgf4ENMT_Ft8xLogtKKn7N40OF_qa3kgTA");'>
+</div>
+<span class="text-[#131b0d] dark:text-white text-sm font-bold">Corporal</span>
+</div>
+<!-- Spiritual Focus -->
+<div class="flex flex-col items-center gap-3 group">
+<div class="w-24 h-24 bg-center bg-no-repeat bg-cover rounded-full border-4 border-white dark:border-background-dark shadow-xl overflow-hidden ring-4 ring-primary/30" data-alt="Starry sky or soft ethereal light for spiritual growth" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCJ6HLIlYz8lBxw1kAskxFqjN6iLdPcqBkFH-DeNbLd2thIdBU1Z8bRx_ADGDn_v4XNt2NEHDsEHxe2ZhL0oNrTXxTUiHmuc002-9MWvXlzpqByxWtFv0AfQ1Nuv1OcmrchjhkTa_VwYhpZ7t11NSa9hQr5lDy0y0MlPaD93QalSdgOKCMwB0LV0nwCw39dPgCp75-nF_ZJBtxG2y0yIKkHzEPe9bD61AnynfjRE8KlXTfv8c1Xynwn-DwXpNjLQpIwvtek_A8XBg");'>
+</div>
+<span class="text-[#131b0d] dark:text-white text-sm font-bold">Espiritual</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SectionHeader Component -->
+<div class="px-6 mt-4">
+<h3 class="text-[#131b0d] dark:text-white text-lg font-bold leading-tight tracking-tight">Nuestra Metodología</h3>
+</div>
+<!-- Methodology Detail Cards -->
+<div class="px-6 space-y-4 py-4">
+<!-- Deep Accompaniment Card -->
+<div class="glass-card p-5 rounded-lg flex gap-4 items-start shadow-sm">
+<div class="bg-primary/20 p-2 rounded-full text-primary">
+<span class="material-symbols-outlined">favorite</span>
+</div>
+<div>
+<h4 class="font-bold text-[#131b0d] dark:text-white">Acompañamiento Respetuoso</h4>
+<p class="text-sm opacity-70 mt-1 leading-snug">Un espacio seguro y profundo para tu transformación personal.</p>
+</div>
+</div>
+<!-- Experiential Learning Card -->
+<div class="glass-card p-5 rounded-lg flex gap-4 items-start shadow-sm">
+<div class="bg-primary/20 p-2 rounded-full text-primary">
+<span class="material-symbols-outlined">auto_fix_high</span>
+</div>
+<div>
+<h4 class="font-bold text-[#131b0d] dark:text-white">Aprendizaje Experuencial</h4>
+<p class="text-sm opacity-70 mt-1 leading-snug">No es solo teoría, es una vivencia práctica que cambia tu ADN emocional.</p>
+</div>
+</div>
+</div>
+<!-- Bottom Action Bar -->
+<div class="mt-auto p-6 bg-gradient-to-t from-background-light dark:from-background-dark to-transparent">
+<button class="w-full bg-primary text-white font-bold py-4 rounded-full shadow-lg shadow-primary/30 flex items-center justify-center gap-2 active:scale-[0.98] transition-transform">
+<span>Continuar</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="h-6 bg-background-light dark:bg-background-dark"></div>
+</div>
+</body></html>

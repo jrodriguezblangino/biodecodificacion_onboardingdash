@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#59d411",
+                        "background-light": "#fcfaf7", // Sand tone background
+                        "background-dark": "#172210",
+                        "terracotta": "#c96f53",
+                        "sand-medium": "#e8dfd1"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-[#131b0d] font-display min-h-screen">
+<div class="relative flex h-full min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="text-[#131b0d] dark:text-white flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined">arrow_back_ios</span>
+</div>
+<h2 class="text-[#131b0d] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">Perfil Profesional</h2>
+</div>
+<!-- Page Indicators -->
+<div class="flex w-full flex-row items-center justify-center gap-3 py-4">
+<div class="h-1.5 w-1.5 rounded-full bg-primary/20"></div>
+<div class="h-1.5 w-8 rounded-full bg-primary"></div>
+<div class="h-1.5 w-1.5 rounded-full bg-primary/20"></div>
+<div class="h-1.5 w-1.5 rounded-full bg-primary/20"></div>
+</div>
+<!-- Profile Header -->
+<div class="flex p-6 @container">
+<div class="flex w-full flex-col gap-6 items-center">
+<div class="flex gap-4 flex-col items-center">
+<div class="relative">
+<div class="absolute inset-0 bg-terracotta/10 rounded-full blur-2xl scale-125"></div>
+<div class="relative bg-center bg-no-repeat aspect-square bg-cover rounded-full h-40 w-40 border-4 border-white dark:border-[#2a3a1d] shadow-xl" data-alt="Portrait of Andrea Blangino, professional biodecoding specialist" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHntrSgpkA3pCPwOswV6mPoCsca8mj8K8asqjTHPjdhxQR9x8_qVjMuJMVsos1dN1YCsj6O8S5OHLolJtbFnWyB7kdrf58GWksXm5ePhoACVWaYjsYrp6YITnUk6S-Rd0MhMILwZna4LKNZSsJteLeB9-XO3ac-0lVwxUU_ytzfxxU9UFgMqt3ulXrnXB937QQT4uTGo_at6lTEW2xTZWqhMegE1wDdkyr27eVRW7MwI6oHRJfg1LvIe2ANBc7D5Ffn14RSSbj3Q");'>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center mt-2">
+<p class="text-[#131b0d] dark:text-white text-2xl font-bold leading-tight tracking-tight text-center">Andrea Blangino</p>
+<p class="text-terracotta text-base font-medium leading-normal text-center mt-1">Especialista en Biodecodificación</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bio Text -->
+<div class="px-6 pb-6">
+<p class="text-[#131b0d]/80 dark:text-white/80 text-base font-normal leading-relaxed text-center max-w-xs mx-auto">
+                Acompaño procesos de transformación profunda, integrando el cuerpo y las emociones para liberar bloqueos y encontrar el equilibrio consciente.
+            </p>
+</div>
+<!-- Specialties Section -->
+<div class="flex flex-col px-6">
+<div class="flex items-center gap-2 pb-4">
+<span class="material-symbols-outlined text-terracotta text-xl">auto_awesome</span>
+<h3 class="text-[#131b0d] dark:text-white text-lg font-bold">Mis Especialidades</h3>
+</div>
+<div class="grid grid-cols-1 gap-3">
+<!-- Specialty Card 1 -->
+<div class="flex items-center gap-4 bg-sand-medium/30 dark:bg-[#2a3a1d] p-4 rounded-xl border border-sand-medium dark:border-white/10">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-terracotta/10 text-terracotta">
+<span class="material-symbols-outlined">psychology_alt</span>
+</div>
+<div>
+<p class="font-bold text-[#131b0d] dark:text-white">Biodecodificación</p>
+<p class="text-xs text-[#131b0d]/60 dark:text-white/60">Sanación a través del origen emocional</p>
+</div>
+</div>
+<!-- Specialty Card 2 -->
+<div class="flex items-center gap-4 bg-sand-medium/30 dark:bg-[#2a3a1d] p-4 rounded-xl border border-sand-medium dark:border-white/10">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">menu_book</span>
+</div>
+<div>
+<p class="font-bold text-[#131b0d] dark:text-white">Registros Akáshicos</p>
+<p class="text-xs text-[#131b0d]/60 dark:text-white/60">Conexión con la sabiduría del alma</p>
+</div>
+</div>
+<!-- Specialty Card 3 -->
+<div class="flex items-center gap-4 bg-sand-medium/30 dark:bg-[#2a3a1d] p-4 rounded-xl border border-sand-medium dark:border-white/10">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-terracotta/10 text-terracotta">
+<span class="material-symbols-outlined">favorite</span>
+</div>
+<div>
+<p class="font-bold text-[#131b0d] dark:text-white">Sanación Emocional</p>
+<p class="text-xs text-[#131b0d]/60 dark:text-white/60">Liberación y desarrollo personal</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Quote/Subtle Detail -->
+<div class="mt-8 px-6 flex justify-center italic text-terracotta/70 text-sm">
+<span class="material-symbols-outlined text-xs mr-2">format_quote</span>
+            "El cuerpo habla lo que el alma calla"
+        </div>
+<!-- Footer Spacer for scrolling -->
+<div class="h-32"></div>
+<!-- Sticky Footer Action -->
+<div class="fixed bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background-light dark:from-background-dark via-background-light/95 dark:via-background-dark/95 to-transparent">
+<button class="w-full bg-primary text-[#131b0d] font-bold py-4 rounded-full shadow-lg shadow-primary/20 flex items-center justify-center gap-2">
+                Siguiente
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</body></html>

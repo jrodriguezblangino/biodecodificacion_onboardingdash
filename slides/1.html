@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Serif font for the name to match the "soft serif" request -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#59d411",
+                        "background-light": "#f7f8f6",
+                        "background-dark": "#172210",
+                        "soft-beige": "#f2ede4"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .serif-text {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex items-center justify-center p-0 m-0">
+<!-- Mobile Container (Simulating iOS Phone Form Factor) -->
+<div class="relative w-full max-w-[430px] h-[932px] bg-background-light dark:bg-background-dark overflow-hidden flex flex-col shadow-2xl">
+<!-- Header Image Section (Background Image) -->
+<div class="absolute inset-0 z-0 h-full w-full">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover opacity-60 dark:opacity-40" data-alt="Soft natural light casting gentle shadows on a minimalist wall" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDU_Oakrw06G5i3iV-SuaGiG6iwu7KYtoSbOKK8aO7km6HCOJtd7oO-2NVjYF1m-YBFJ5tFXbPGPawev02HQp8G0MtiUdu3Ay2AjPt0pi3RbIioVCF_ENoVwgApRbAxR4w9kUut5eO1r15wcOK83Z5CHStEjj28mpNjEKZ-43XXcG3Jb2YVoO3a13cStUxFUVpzrN3Tg--w57nsnUimwa7N_BEFYd9L6MFdO8WgQR9cKzYgyfQmsIGrr3RYPuYFAB8ZzZ75Ha-N7Q");'>
+</div>
+<!-- Gradient Overlay for readability -->
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background-light/40 to-background-light dark:to-background-dark"></div>
+</div>
+<!-- Content Layer -->
+<div class="relative z-10 flex flex-col h-full px-8 pt-24 pb-16 justify-between items-center text-center">
+<!-- Top Branding Decoration -->
+<div class="flex flex-col items-center">
+<div class="w-12 h-[1px] bg-primary mb-8"></div>
+<!-- HeadlineText Component - Name -->
+<h1 class="serif-text text-[42px] font-normal leading-tight tracking-tight text-[#131b0d] dark:text-[#f7f8f6] mb-2">
+                    Andrea Blangino
+                </h1>
+<!-- TitleText Component - Role -->
+<div class="bg-primary/10 px-4 py-1.5 rounded-full mt-4">
+<h2 class="text-primary text-xs font-bold uppercase tracking-[0.2em] leading-tight">
+                        Terapeuta y Formadora en Biodecodificación
+                    </h2>
+</div>
+</div>
+<!-- Visual Center Piece (Abstract soft shadow/shape) -->
+<div class="flex-grow flex items-center justify-center">
+<div class="relative w-48 h-48 rounded-full bg-primary/5 border border-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-5xl font-extralight">eco</span>
+<!-- Decorative ring -->
+<div class="absolute inset-0 rounded-full border border-primary/20 scale-125"></div>
+</div>
+</div>
+<!-- Footer Section -->
+<div class="w-full flex flex-col items-center">
+<!-- BodyText Component - Key Phrase -->
+<div class="max-w-[280px]">
+<p class="text-[#131b0d] dark:text-slate-300 text-lg italic font-light leading-relaxed serif-text">
+                        "Sanar es comprender el mensaje detrás de la experiencia"
+                    </p>
+</div>
+<!-- Bottom Indicator (Modern iOS feel) -->
+<div class="mt-16 flex flex-col items-center gap-2">
+<span class="text-[10px] uppercase tracking-widest font-bold text-slate-400 dark:text-slate-500">Bienvenida</span>
+<div class="w-1 h-1 rounded-full bg-primary"></div>
+</div>
+</div>
+</div>
+<!-- Safe Area Home Indicator (iOS Style) -->
+<div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-32 h-1 bg-slate-300 dark:bg-slate-700 rounded-full z-20"></div>
+</div>
+</body></html>
